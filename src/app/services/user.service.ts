@@ -12,4 +12,9 @@ export class UserService {
       console.log(data);
     });
   }
+  getUserById(id: number){
+    this.http.get('https://jsonplaceholder.typicode.com/users/' + id).subscribe((data) => {
+      console.log(data);
+    });
+  }
 }
