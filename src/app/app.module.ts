@@ -7,12 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTableModule} from '@angular/material/table';
 import { ElementComponent } from './element/element.component';
 import { DetailsComponent } from './details/details.component';
+import { ListUsersComponent } from './list-users/list-users.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ElementComponent,
-    DetailsComponent
+    DetailsComponent,
+    ListUsersComponent
   ],
     imports: [
         BrowserModule,
