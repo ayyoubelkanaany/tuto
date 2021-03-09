@@ -14,7 +14,6 @@ export class AppComponent implements  OnInit{
   title = 'TestFiles';
 
   ngOnInit(): void {
-    this.userService.getUsers();
-    this.userService.getUserById(2);
+
   }
 }

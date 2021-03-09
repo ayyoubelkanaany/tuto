@@ -8,6 +8,7 @@ import {MatTableModule} from '@angular/material/table';
 import { ElementComponent } from './element/element.component';
 import { DetailsComponent } from './details/details.component';
 import { ListUsersComponent } from './list-users/list-users.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,14 @@ import { ListUsersComponent } from './list-users/list-users.component';
     DetailsComponent,
     ListUsersComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        MatTableModule,
-        HttpClientModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatTableModule,
+    HttpClientModule,
+    FormsModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
