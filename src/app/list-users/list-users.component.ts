@@ -26,6 +26,7 @@ export class ListUsersComponent implements OnInit {
     this.route.navigate(['details']);
   }
   filter(criter: string){
+    this.users = this.usersRef;
     if (criter !== ''){
       this.users = this.users.filter(value => value.name.startsWith(criter));
     }
