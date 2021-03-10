@@ -23,7 +23,7 @@ export class ListUsersComponent implements OnInit {
     });
   }
   getDetails(id: number){
-    this.route.navigate(['details']);
+    this.route.navigate(['/details', id]);
   }
   filter(criter: string){
     this.users = this.usersRef;
