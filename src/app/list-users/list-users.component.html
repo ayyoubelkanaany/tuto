@@ -1,7 +1,7 @@
-<div class="container-fluid">
+<div class="container">
   <div class="row mt-4 justify-content-start">
-      <input type="text"  placeholder="search" class="form-control " style="display: inline;width:300px">
-      <button class="btn mx-2 btn-danger">Show Details</button>
+      <input type="text" #criter (input)="filter(criter.value)" placeholder="search" class="form-control " style="display: inline;width:300px">
+      <button class="btn mx-2 btn-danger" >Reset Search</button>
   </div>
   <div class="row my-4">
     <table  class="table table-dark">
